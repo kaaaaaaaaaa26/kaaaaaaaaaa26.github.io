@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.photo-gallery ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-gallery li {
+    margin: 10px;
+}
+
+.photo-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.youtube-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.youtube-links li {
+    margin: 10px;
+}
+
+.youtube-links a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.youtube-links a:hover {
+    color: #23527c;
+}
+
+.birthday-message {
+    text-align: center;
+}
+
+.foto1{
+    width: 300px;
+    height: 300px;
+}
