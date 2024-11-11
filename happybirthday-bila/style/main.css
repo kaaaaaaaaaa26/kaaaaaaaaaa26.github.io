@@ -1,0 +1,392 @@
+/* Reset CSS */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: pink; /* Set background color */
+  height: 100vh; /* Ensure body height covers full screen */
+}
+
+.song {
+  visibility: hidden;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+  color: #ff69b4; 
+  font-size: 1rem; /* Atur sesuai dengan ukuran yang diinginkan */
+}
+
+.two {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #ff99cc;
+}
+
+.two #greetingText {
+  color: #ff69b4; /* Ganti dengan warna yang kontras */
+}
+
+.three {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  color: #ff66b2;
+}
+
+.four .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+  background-color: #fff0f6; /* Menambahkan warna latar untuk estetika */
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text-box .fake-btn:hover {
+  background-color: rgb(30, 180, 255);
+}
+
+.five p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+  color: #ff69b4;
+}
+
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
+  display: inline-block;
+}
+
+.idea-6 span {
+  font-size: 3rem; /* Diubah dari 15rem menjadi 3rem */
+  color: #ff66b2;
+  margin: 0 2px;
+}
+
+.six {
+  position: relative;
+  top: 10vh;
+  z-index: 1;
+}
+
+.six img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+}
+
+.six .hat {
+  left: 70%; /* Pusatkan topi di layar */
+  position: absolute;
+  top: -35%;
+  width: 80px;
+  transform: translateX(-50%); /* Pastikan topi benar-benar di tengah */
+  animation: hat-bounce 2s infinite;
+}
+
+@keyframes hat-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+.baloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.seven, .eight {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.eight svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 25px;
+  z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+  fill: #bd6ecf;
+  left: 5vw;
+  top: 7vh;
+}
+
+.eight svg:nth-child(2) {
+  fill: #7dd175;
+  left: 35vw;
+  top: 23vh;
+}
+
+.eight svg:nth-child(3) {
+  fill: #349d8b;
+  left: 23vw;
+  top: 33vh;
+}
+
+.eight svg:nth-child(4) {
+  fill: #347a9d;
+  left: 57vw;
+  top: 43vh;
+}
+
+.eight svg:nth-child(5) {
+  fill: #c66053;
+  left: 7vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(6) {
+  fill: #bfaa40;
+  left: 77vw;
+  top: 42vh;
+}
+
+.eight svg:nth-child(7) {
+  fill: #e3bae8;
+  left: 83vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(8) {
+  fill: #8762cb;
+  left: 37vw;
+  top: 86vh;
+}
+
+.eight svg:nth-child(9) {
+  fill: #9a90da;
+  left: 87vw;
+  top: 94vh;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ff99cc;
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
+  color: #ffccf2;
+}
+
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #ff80bf;
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Media Queries */
+@media screen and (max-height: 1000px) {
+  .six .hat {
+      left: 50%; /* Pusatkan topi */
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .six .hat {
+      left: 50%; /* Pusatkan topi */
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .six .hat {
+      left: 50%; /* Pusatkan topi */
+  }
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px) {
+  .six .hat {
+      left: 50%; /* Pusatkan topi */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+      width: 90%;
+  }
+
+  .four .text-box {
+      width: 90%;
+  }
+
+  .text-box .fake-btn {
+      bottom: -38px;
+      right: 5px;
+  }
+
+  .idea-5 span {
+      display: block;
+  }
+
+  .idea-6 span {
+      font-size: 2rem; /* Diubah dari 10rem menjadi 2rem */
+  }
+
+  .six .hat {
+      left: 50%; /* Pusatkan topi */
+      width: 50px; /* Ukuran topi untuk layar kecil */
+  }
+
+  .wish-hbd {
+      font-size: 2.2em;
+  }
+
+  .wish h5 {
+      font-size: 1.4rem;
+  }
+
+  .nine p {
+      font-size: 1.5rem;
+      font-weight: lighter;
+  }
+
+  /* Optimasi Balon untuk Mobile */
+  .baloons {
+      height: 200px;
+  }
+
+  .baloons img {
+      width: 40px; /* Menyesuaikan ukuran balon untuk mobile */
+      animation: float-mobile 10s linear infinite;
+  }
+
+  @keyframes float-mobile {
+      0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+      }
+      50% {
+          opacity: 1;
+      }
+      100% {
+          transform: translateY(-300px) rotate(360deg);
+          opacity: 0;
+      }
+  }
+
+  /* Menambahkan padding atau margin jika diperlukan */
+  .five p {
+      padding: 0 10px;
+  }
+}
+
+/* Gaya untuk tombol redirect */
+.redirect-btn {
+  display: none; /* Sembunyikan tombol secara default */
+  padding: 12px 24px;
+  background-color: #ff69b4; /* Warna latar belakang tombol */
+  color: #ffffff; /* Warna teks tombol */
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  border: none;
+  border-radius: 8px; /* Membuat sudut tombol melengkung */
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.5s ease;
+  margin-top: 20px; /* Memberi jarak atas tombol */
+  display: block; /* Agar tombol berada di baris baru */
+  width: fit-content; /* Menyesuaikan lebar tombol dengan kontennya */
+  margin-left: auto;
+  margin-right: auto; /* Untuk memusatkan tombol */
+  opacity: 0; /* Awalnya transparan */
+}
+
+/* Efek hover pada tombol */
+.redirect-btn:hover {
+  background-color: #ff85c1; /* Warna saat hover */
+  transform: scale(1.05); /* Efek sedikit membesar saat hover */
+}
+
+/* Animasi untuk menampilkan tombol */
+.redirect-btn.show {
+  display: block;
+  opacity: 1;
+}
